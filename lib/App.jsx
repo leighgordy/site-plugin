@@ -1,27 +1,34 @@
 import React from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import {
+  Switch,
+  Route,
+  useRouteMatch,
+} from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 import PluginTheme from './Theme';
+import DefaultRoute from './DefaultRoute';
 
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
-`;
-
-// Create a Wrapper component that'll render a <section> tag with some styles
-const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
-`;
-
+// if you are not using react router
+// dont forget to remove the react-router-dom import!
+/*
 function App() {
   return (
     <ThemeProvider theme={PluginTheme}>
-      <Wrapper>
-        <Title>
-          Hello worlds!!
-        </Title>
-      </Wrapper>
+      <DefaultRoute />
+    </ThemeProvider>
+  );
+}
+*/
+
+function App() {
+  const match = useRouteMatch();
+  return (
+    <ThemeProvider theme={PluginTheme}>
+      <Switch>
+        <Route path={match.path}>
+          <DefaultRoute />
+        </Route>
+      </Switch>
     </ThemeProvider>
   );
 }

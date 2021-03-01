@@ -4,5 +4,4 @@
   You might want to copy the parent project theme in here. To ensure
   the plugin will work when imported.
  */
-export default {
-};
+export default {};
