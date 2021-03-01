@@ -2,7 +2,7 @@
   "name": "site-plugin",
   "version": "1.0.0",
   "description": "This is a webpack project that has been designed to be imported as an ES6 module by other projects.  This pattern allows you to break up a large web application into several projects.  This is useful when you are reusing components in different projects or if you want several teams  of developers to work on a very large project.",
-  "main": "lib/index.js",
+  "main": "lib/Index.js",
   "scripts": {
     "serve": "webpack serve --open",
     "test": "jest",

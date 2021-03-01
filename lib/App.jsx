@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
+import PluginTheme from './Theme';
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -15,11 +16,13 @@ const Wrapper = styled.section`
 
 function App() {
   return (
-    <Wrapper>
-      <Title>
-        Hello worlds!!
-      </Title>
-    </Wrapper>
+    <ThemeProvider theme={PluginTheme}>
+      <Wrapper>
+        <Title>
+          Hello worlds!!
+        </Title>
+      </Wrapper>
+    </ThemeProvider>
   );
 }
 

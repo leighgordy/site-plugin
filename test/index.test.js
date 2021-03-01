@@ -1,4 +1,4 @@
-import App from '../lib/index';
+import App from '../lib/Index';
 
 describe('index.js', () => {
   test('A simple test', () => {
