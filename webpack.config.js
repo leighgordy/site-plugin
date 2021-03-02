@@ -8,6 +8,7 @@ module.exports = {
   devServer: {
     contentBase: './dist',
     historyApiFallback: true,
+    openPage: 'plugin',
   },
   output: {
     filename: 'bundle.js',

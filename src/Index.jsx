@@ -7,6 +7,7 @@ import {
   Route,
 } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
+import NotFoundRoute from './NotFoundRoute';
 import App from '../lib/Index';
 import ExternalTheme from './ExternalTheme';
 
@@ -14,8 +15,11 @@ ReactDom.render((
   <Router>
     <ThemeProvider theme={ExternalTheme}>
       <Switch>
-        <Route path="/">
+        <Route path="/plugin/">
           <App />
+        </Route>
+        <Route>
+          <NotFoundRoute />
         </Route>
       </Switch>
     </ThemeProvider>
