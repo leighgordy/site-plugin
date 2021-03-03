@@ -15,7 +15,7 @@ ReactDom.render((
   <Router>
     <ThemeProvider theme={ExternalTheme}>
       <Switch>
-        <Route path="/plugin/">
+        <Route path="/plugin/" strict>
           <App />
         </Route>
         <Route>

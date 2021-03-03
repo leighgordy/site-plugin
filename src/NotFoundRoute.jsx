@@ -21,7 +21,7 @@ function NotFoundRoute() {
       <p>
         I think you have mistyped the path to the component. Should be
         {' '}
-        <a href="/plugin">/plugin</a>
+        <a href="/plugin/">/plugin/</a>
         .
       </p>
     </Wrapper>
