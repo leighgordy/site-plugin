@@ -1,7 +1,7 @@
 {
-  "name": "site-plugin",
+  "name": "site-plugin-js",
   "version": "1.0.0",
-  "description": "This is a webpack project that has been designed to be imported as an ES6 module by other projects.  This pattern allows you to break up a large web application into several projects.  This is useful when you are reusing components in different projects or if you want several teams  of developers to work on a very large project.",
+  "description": "This is a webpack project that has been designed to be imported as an ES module by other projects.  This pattern allows you to break up a large web application into several projects.  This is useful when you are reusing components in different projects or if you want several teams  of developers to work on a very large project.",
   "main": "lib/Index.js",
   "scripts": {
     "serve": "webpack serve --open",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leighgordy/site-plugin.git"
+    "url": "git+https://github.com/leighgordy/site-plugin-js.git"
   },
   "author": "leighgordy@gmail.com",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/leighgordy/site-plugin/issues"
+    "url": "https://github.com/leighgordy/site-plugin-js/issues"
   },
-  "homepage": "https://github.com/leighgordy/site-plugin#readme",
+  "homepage": "https://github.com/leighgordy/site-plugin-js#readme",
   "devDependencies": {
     "@babel/core": "^7.13.8",
     "@babel/preset-env": "^7.13.8",
